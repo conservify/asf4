@@ -15,7 +15,7 @@ if not subprocess.check_output(['git', 'rev-parse', '--show-toplevel'], universa
 DOWNLOADED_ZIP_DIR = 'downloaded-zip'
 DOWNLOADED_DIR = 'downloaded'
 
-for chip in ['samd21', 'samd51']:
+for chip in ['samd21', 'samd51', 'samd09']:
     r = None
     os.makedirs(DOWNLOADED_ZIP_DIR, exist_ok=True)
     filename = os.path.join(DOWNLOADED_ZIP_DIR, chip + '.zip')
